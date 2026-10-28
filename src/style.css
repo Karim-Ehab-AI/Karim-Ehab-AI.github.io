@@ -1,17 +1,17 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(5, 10, 15, 0.85),
-    rgba(0, 0, 0, 0.95)
+    rgba(17, 16, 16, 0.582),
+    rgba(12, 8, 24, 0.904)
   );
 
   --image-gradient: linear-gradient(
     to bottom left,
-    rgba(5, 10, 15, 0.7),
-    rgba(0, 0, 0, 0.88)
+    rgba(17, 16, 16, 0.678),
+    rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #87CEEB;
+  --imp-text-color: #c770f0;
 }
 
 .purple {
@@ -42,11 +42,6 @@ button:focus {
   opacity: 0;
 }
 
-/* #preloader-none {
-  opacity: 0;
-  display: none;
-} */
-
 #no-scroll {
   overflow: hidden;
   height: 100vh;
@@ -62,18 +57,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #0a0f14;
+  background: #0a0416;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(135, 206, 235, 0.7);
+  background: rgba(199, 112, 240, 0.7);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(135, 206, 235, 0.95);
+  background: rgba(199, 112, 240, 0.95);
   border-radius: 12px;
 }
 
@@ -102,7 +97,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #87CEEB !important;
+  background-color: #c770f0 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -119,7 +114,6 @@ button:focus {
 
 .navbar-toggler span:nth-child(1),
 .navbar-toggler span:nth-child(3) {
-  transition: transform 0.35s ease-in-out !important;
   transition: transform 0.35s ease-in-out !important;
 }
 
@@ -199,7 +193,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #87CEEB;
+  background: #c770f0;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -214,38 +208,22 @@ button:focus {
 /* Home section */
 /* --------- */
 .wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  animation-name: wave-animation;
+  animation-duration: 2.1s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
   display: inline-block;
 }
 
 @keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 #tsparticles {
   position: fixed !important;
@@ -263,7 +241,6 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -287,17 +264,17 @@ button:focus {
 }
 
 .main-name {
-  color: #87CEEB;
+  color: #c770f0;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #87CEEB !important;
+  color: #c770f0 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #87CEEB !important;
+  color: #c770f0 !important;
 }
 
 @media (max-width: 767px) {
@@ -377,7 +354,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #1a4a6e;
+  background: #623686;
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -385,13 +362,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #2a7bae;
+  box-shadow: 0 0 15px #c770f0;
 }
 
 .home-social-icons:hover {
-  color: #2a7bae;
-  box-shadow: 0 0 5px #2a7bae;
-  text-shadow: 0 0 2px #2a7bae;
+  color: #c770f0;
+  box-shadow: 0 0 5px #c770f0;
+  text-shadow: 0 0 2px #c770f0;
 }
 
 .social-icons {
@@ -401,7 +378,7 @@ button:focus {
 }
 
 .icon-colour {
-  color: #1e6fa0 !important;
+  color: #c770f0 !important;
 }
 
 /* --------- */
@@ -445,7 +422,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #87CEEB !important;
+  color: #c770f0 !important;
 }
 /* --------- */
 /* Projects */
@@ -466,10 +443,10 @@ button:focus {
 }
 
 .project-card-view {
-  background: rgba(5, 10, 15, 0.92) !important;
-  border: 1px solid rgba(135, 206, 235, 0.35) !important;
+  background: rgba(12, 8, 24, 0.92) !important;
+  border: 1px solid rgba(199, 112, 240, 0.35) !important;
   border-radius: 16px !important;
-  box-shadow: 0 6px 24px rgba(70, 140, 180, 0.25) !important;
+  box-shadow: 0 6px 24px rgba(119, 53, 136, 0.25) !important;
   color: white !important;
   opacity: 1 !important;
   backdrop-filter: blur(10px) !important;
@@ -478,8 +455,8 @@ button:focus {
 }
 .project-card-view:hover {
   transform: translateY(-4px) !important;
-  box-shadow: 0 10px 32px rgba(135, 206, 235, 0.45) !important;
-  border-color: rgba(135, 206, 235, 0.75) !important;
+  box-shadow: 0 10px 32px rgba(199, 112, 240, 0.45) !important;
+  border-color: rgba(199, 112, 240, 0.75) !important;
 }
 
 .blog-card {
@@ -492,7 +469,7 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(70, 140, 180, 0.35) !important;
+  box-shadow: 0 3px 3px 2px rgba(119, 53, 136, 0.35) !important;
   color: white !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
@@ -510,7 +487,7 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(100, 180, 220, 0.5) !important;
+  box-shadow: 0 3px 3px 5px rgba(199, 112, 240, 0.5) !important;
 }
 
 .card-img-top {
@@ -527,14 +504,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #1a5a8a !important;
-  border-color: #1a5a8a !important;
+  background-color: #623686 !important;
+  border-color: #623686 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #2980b9 !important;
-  border-color: #2980b9 !important;
+  background-color: #4d2a69 !important;
+  border-color: #4d2a69 !important;
 }
 .btn:focus {
   outline: none !important;
@@ -555,7 +532,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  /* background-image: var(--section-background-color) !important; */
   color: white !important;
 }
 
@@ -567,11 +543,11 @@ button:focus {
   margin: 15px !important;
   padding: 10px 20px !important;
   opacity: 0.93 !important;
-  outline: 1.7px solid rgba(135, 206, 235, 0.5) !important;
+  outline: 1.7px solid rgba(199, 112, 240, 0.5) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 24px !important;
-  box-shadow: 4px 5px 4px 3px rgba(70, 140, 180, 0.1) !important;
+  box-shadow: 4px 5px 4px 3px rgba(119, 53, 136, 0.1) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
   width: fit-content !important;
@@ -596,7 +572,7 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  outline: 2.2px solid rgba(135, 206, 235, 0.9) !important;
+  outline: 2.2px solid rgba(199, 112, 240, 0.9) !important;
 }
 .tech-icon-images {
   height: 1.6rem;
@@ -667,14 +643,14 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #87CEEB;
+  border-left: 2px solid #c770f0;
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: rgba(135, 206, 235, 0.1);
+  background: rgba(199, 112, 240, 0.1);
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -704,7 +680,7 @@ button:focus {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #87CEEB;
+  border: 2px solid #c770f0;
 }
 
 .like-item {
@@ -714,8 +690,8 @@ button:focus {
 }
 
 .like-btn {
-  background-color: rgba(135, 206, 235, 0.15) !important;
-  border-color: rgba(135, 206, 235, 0.3) !important;
+  background-color: rgba(199, 112, 240, 0.15) !important;
+  border-color: rgba(199, 112, 240, 0.3) !important;
   padding: 0.25rem 0.98rem !important;
   border-radius: 5px !important;
   line-height: 1.4 !important;
@@ -724,8 +700,8 @@ button:focus {
 
 .like-btn:hover {
   transform: translateY(-2px) !important;
-  background-color: rgba(135, 206, 235, 0.3) !important;
-  border-color: rgba(135, 206, 235, 0.5) !important;
+  background-color: rgba(199, 112, 240, 0.3) !important;
+  border-color: rgba(199, 112, 240, 0.5) !important;
 }
 
 .animate-like {
@@ -734,12 +710,8 @@ button:focus {
   animation-duration: 0.85s;
 }
 @keyframes likeAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
+  0% { transform: scale(1.5); }
+  100% { transform: scale(1); }
 }
 
 .fork-btn {
@@ -749,7 +721,7 @@ button:focus {
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: rgba(135, 206, 235, 0.15) !important;
+  background-color: rgba(199, 112, 240, 0.15) !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -757,8 +729,8 @@ button:focus {
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: rgba(135, 206, 235, 0.3) !important;
-  border-color: rgba(135, 206, 235, 0.5) !important;
+  background-color: rgba(199, 112, 240, 0.3) !important;
+  border-color: rgba(199, 112, 240, 0.5) !important;
 }
 .fork-btn-inner::after {
   display: none !important;
@@ -780,9 +752,9 @@ button:focus {
   bottom: 15px;
   left: 24px;
   width: 4px;
-  background: linear-gradient(180deg, #87CEEB 0%, #4a9fc7 50%, #2980b9 100%);
+  background: linear-gradient(180deg, #c770f0 0%, #a650c7 50%, #623686 100%);
   border-radius: 4px;
-  box-shadow: 0 0 10px rgba(135, 206, 235, 0.4);
+  box-shadow: 0 0 10px rgba(199, 112, 240, 0.4);
 }
 
 .timeline-item {
@@ -802,30 +774,30 @@ button:focus {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #050a0f;
-  border: 3px solid #87CEEB;
+  background: #0a0416;
+  border: 3px solid #c770f0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #87CEEB;
+  color: #c770f0;
   font-size: 1.15em;
   z-index: 2;
-  box-shadow: 0 0 14px rgba(135, 206, 235, 0.5);
+  box-shadow: 0 0 14px rgba(199, 112, 240, 0.5);
   transition: all 0.3s ease;
 }
 
 .timeline-item:hover .timeline-dot {
   transform: scale(1.12);
-  box-shadow: 0 0 20px rgba(135, 206, 235, 0.85);
-  background: #0a1520;
+  box-shadow: 0 0 20px rgba(199, 112, 240, 0.85);
+  background: #15092a;
 }
 
 .timeline-card {
-  background: rgba(5, 10, 15, 0.82);
-  border: 1px solid rgba(135, 206, 235, 0.3);
+  background: rgba(12, 8, 24, 0.82);
+  border: 1px solid rgba(199, 112, 240, 0.3);
   border-radius: 14px;
   padding: 18px 24px;
-  box-shadow: 0 4px 18px rgba(70, 140, 180, 0.2);
+  box-shadow: 0 4px 18px rgba(119, 53, 136, 0.2);
   backdrop-filter: blur(8px);
   text-align: left;
   transition: all 0.25s ease-in-out;
@@ -833,8 +805,8 @@ button:focus {
 
 .timeline-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(135, 206, 235, 0.35);
-  border-color: rgba(135, 206, 235, 0.7);
+  box-shadow: 0 8px 25px rgba(199, 112, 240, 0.35);
+  border-color: rgba(199, 112, 240, 0.7);
 }
 
 .timeline-header-row {
@@ -856,7 +828,7 @@ button:focus {
 .timeline-company {
   font-size: 1.05em;
   font-weight: 600;
-  color: #87CEEB;
+  color: #c770f0;
 }
 
 .timeline-meta {
@@ -870,9 +842,9 @@ button:focus {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  background: rgba(135, 206, 235, 0.12);
-  border: 1px solid rgba(135, 206, 235, 0.3);
-  color: #bce8f7;
+  background: rgba(199, 112, 240, 0.12);
+  border: 1px solid rgba(199, 112, 240, 0.3);
+  color: #e3b1f7;
   font-size: 0.84em;
   padding: 4px 12px;
   border-radius: 20px;
@@ -895,11 +867,11 @@ button:focus {
 /* Education Section       */
 /* ----------------------- */
 .education-card {
-  background: rgba(5, 10, 15, 0.82);
-  border: 1px solid rgba(135, 206, 235, 0.3);
+  background: rgba(12, 8, 24, 0.82);
+  border: 1px solid rgba(199, 112, 240, 0.3);
   border-radius: 16px;
   padding: 25px 30px;
-  box-shadow: 0 4px 20px rgba(70, 140, 180, 0.2);
+  box-shadow: 0 4px 20px rgba(119, 53, 136, 0.2);
   backdrop-filter: blur(8px);
   transition: all 0.3s ease;
   max-width: 920px;
@@ -909,8 +881,8 @@ button:focus {
 
 .education-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(135, 206, 235, 0.4);
-  border-color: rgba(135, 206, 235, 0.7);
+  box-shadow: 0 8px 30px rgba(199, 112, 240, 0.4);
+  border-color: rgba(199, 112, 240, 0.7);
 }
 
 .education-logo-container {
@@ -927,7 +899,7 @@ button:focus {
   background: #ffffff;
   padding: 8px;
   border-radius: 16px;
-  box-shadow: 0 0 20px rgba(135, 206, 235, 0.35);
+  box-shadow: 0 0 20px rgba(199, 112, 240, 0.35);
 }
 
 .education-course-tags {
@@ -938,9 +910,9 @@ button:focus {
 }
 
 .education-course-tag {
-  background: rgba(135, 206, 235, 0.08);
-  border: 1px solid rgba(135, 206, 235, 0.28);
-  color: #d4eef8;
+  background: rgba(199, 112, 240, 0.08);
+  border: 1px solid rgba(199, 112, 240, 0.28);
+  color: #e3b1f7;
   padding: 4px 11px;
   border-radius: 14px;
   font-size: 0.83em;
@@ -952,11 +924,11 @@ button:focus {
 }
 
 .education-course-tag:hover {
-  background: rgba(135, 206, 235, 0.18);
-  border-color: rgba(135, 206, 235, 0.6);
+  background: rgba(199, 112, 240, 0.18);
+  border-color: rgba(199, 112, 240, 0.6);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(135, 206, 235, 0.2);
+  box-shadow: 0 4px 12px rgba(199, 112, 240, 0.2);
 }
 
 @media (max-width: 768px) {
@@ -987,10 +959,10 @@ button:focus {
 /* Certificates Section    */
 /* ----------------------- */
 .certificate-card {
-  background: rgba(5, 10, 15, 0.92) !important;
-  border: 1px solid rgba(135, 206, 235, 0.3) !important;
+  background: rgba(12, 8, 24, 0.92) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
   border-radius: 16px !important;
-  box-shadow: 0 6px 24px rgba(70, 140, 180, 0.2) !important;
+  box-shadow: 0 6px 24px rgba(119, 53, 136, 0.2) !important;
   color: white !important;
   opacity: 1 !important;
   backdrop-filter: blur(10px) !important;
@@ -1004,8 +976,8 @@ button:focus {
 
 .certificate-card:hover {
   transform: translateY(-5px) !important;
-  box-shadow: 0 10px 32px rgba(135, 206, 235, 0.45) !important;
-  border-color: rgba(135, 206, 235, 0.75) !important;
+  box-shadow: 0 10px 32px rgba(199, 112, 240, 0.45) !important;
+  border-color: rgba(199, 112, 240, 0.75) !important;
 }
 
 .certificate-img-container {
@@ -1019,7 +991,7 @@ button:focus {
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
-  border: 1px solid rgba(135, 206, 235, 0.2);
+  border: 1px solid rgba(199, 112, 240, 0.2);
   transition: transform 0.3s ease;
   background: #ffffff;
 }
@@ -1037,9 +1009,9 @@ button:focus {
 }
 
 .cert-filter-btn {
-  background: rgba(135, 206, 235, 0.07);
-  color: #d4eef8;
-  border: 1.5px solid rgba(135, 206, 235, 0.4);
+  background: rgba(199, 112, 240, 0.07);
+  color: #e3b1f7;
+  border: 1.5px solid rgba(199, 112, 240, 0.4);
   padding: 8px 22px;
   border-radius: 30px;
   font-weight: 600;
@@ -1050,10 +1022,10 @@ button:focus {
 
 .cert-filter-btn:hover,
 .cert-filter-btn.active {
-  background: #2980b9 !important;
+  background: #623686 !important;
   color: #ffffff !important;
-  box-shadow: 0 0 18px rgba(135, 206, 235, 0.55) !important;
-  border-color: #87CEEB !important;
+  box-shadow: 0 0 18px rgba(199, 112, 240, 0.55) !important;
+  border-color: #c770f0 !important;
 }
 
 .cert-section-header {
@@ -1065,6 +1037,6 @@ button:focus {
   font-size: 1.65em;
   font-weight: 700;
   color: #ffffff;
-  border-bottom: 1px solid rgba(135, 206, 235, 0.22);
+  border-bottom: 1px solid rgba(199, 112, 240, 0.22);
   padding-bottom: 12px;
 }

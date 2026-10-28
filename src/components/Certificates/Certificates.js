@@ -65,7 +65,7 @@ function Certificates() {
       title: "AI Engineering Internship",
       issuer: "EVA Cosmetics",
       date: "Jul 2026 – Sep 2026",
-      icon: <FaBriefcase color="#87CEEB" />,
+      icon: <FaBriefcase color="#c770f0" />,
       description:
         "Completed AI Engineering internship building an explainable candidate search and ranking ATS platform, reducing screening time from days to seconds with 95.56% Precision@5.",
     },
@@ -114,7 +114,7 @@ function Certificates() {
       title: "Machine Learning Engineer Track Completion",
       issuer: "DEPI — Ministry of Communications (MCIT)",
       date: "Apr 2024 – Oct 2024",
-      icon: <TbCertificate color="#87CEEB" />,
+      icon: <TbCertificate color="#c770f0" />,
       description:
         "Graduated from the Digital Egypt Pioneers Initiative (DEPI) Machine Learning track after 6 months of comprehensive training in ML, Deep Learning, NLP, CV, and Azure.",
     },
@@ -122,7 +122,7 @@ function Certificates() {
       img: depiBusinessEnglishImg,
       title: "Business English Track Certificate",
       issuer: "DEPI & Berlitz",
-      icon: <TbCertificate color="#87CEEB" />,
+      icon: <TbCertificate color="#c770f0" />,
       description:
         "Completed professional Business English communication track as part of the DEPI scholarship program.",
     },
@@ -132,7 +132,7 @@ function Certificates() {
       issuer: "DeepLearning.AI",
       date: "May 2026",
       link: "https://www.coursera.org/account/accomplishments/verify/QJSVX0QD35VT",
-      icon: <TbCertificate color="#87CEEB" />,
+      icon: <TbCertificate color="#c770f0" />,
       description:
         "Hands-on implementation of vector databases, hybrid dense/sparse retrieval, query translation, and automated evaluation using RAGAS.",
     },
@@ -380,7 +380,7 @@ function Certificates() {
         {showSection2 && (
           <div style={{ marginBottom: "50px" }}>
             <div className="cert-section-header">
-              <TbCertificate style={{ color: "#87CEEB" }} />
+              <TbCertificate style={{ color: "#c770f0" }} />
               <span>Specialized AI, Azure Learning Paths &amp; Programs</span>
             </div>
             <Row style={{ justifyContent: "center" }}>

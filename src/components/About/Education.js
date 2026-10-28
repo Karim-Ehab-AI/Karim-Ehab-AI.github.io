@@ -31,13 +31,13 @@ function Education() {
 
         <Col md={9} style={{ paddingLeft: "25px" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
-            <FaGraduationCap style={{ fontSize: "1.6em", color: "#87CEEB" }} />
+            <FaGraduationCap style={{ fontSize: "1.6em", color: "#c770f0" }} />
             <h3 style={{ fontSize: "1.35em", fontWeight: "700", color: "#ffffff", margin: 0 }}>
               Bachelor of Science in Computer Engineering
             </h3>
           </div>
 
-          <h5 style={{ color: "#87CEEB", fontWeight: "600", marginBottom: "12px", fontSize: "1.05em" }}>
+          <h5 style={{ color: "#c770f0", fontWeight: "600", marginBottom: "12px", fontSize: "1.05em" }}>
             Benha University – Faculty of Engineering at Shoubra
           </h5>
 
@@ -67,7 +67,7 @@ function Education() {
           <div className="education-course-tags">
             {coursework.map((course, idx) => (
               <span key={idx} className="education-course-tag">
-                <FaBookOpen style={{ fontSize: "0.75em", color: "#87CEEB" }} /> {course}
+                <FaBookOpen style={{ fontSize: "0.75em", color: "#c770f0" }} /> {course}
               </span>
             ))}
           </div>

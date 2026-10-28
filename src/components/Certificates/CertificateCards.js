@@ -19,15 +19,15 @@ function CertificateCards({ img, title, issuer, date, description, link, icon })
 
         <Card.Body style={{ padding: "18px 20px", display: "flex", flexDirection: "column", flexGrow: 1 }}>
           <div style={{ display: "flex", alignItems: "flex-start", gap: "10px", marginBottom: "8px" }}>
-            <div style={{ fontSize: "1.4em", color: "#87CEEB", marginTop: "2px", flexShrink: 0 }}>
+            <div style={{ fontSize: "1.4em", color: "#c770f0", marginTop: "2px", flexShrink: 0 }}>
               {icon || <TbCertificate />}
             </div>
             <div style={{ flexGrow: 1 }}>
               <Card.Title style={{ fontSize: "1.1em", fontWeight: "700", color: "#ffffff", margin: 0, lineHeight: "1.4" }}>
                 {title}
               </Card.Title>
-              <div style={{ color: "#87CEEB", fontSize: "0.88em", marginTop: "4px" }}>
-                <strong style={{ color: "#d4eef8" }}>{issuer}</strong> {date && `• ${date}`}
+              <div style={{ color: "#c770f0", fontSize: "0.88em", marginTop: "4px" }}>
+                <strong style={{ color: "#e3b1f7" }}>{issuer}</strong> {date && `• ${date}`}
               </div>
             </div>
           </div>
@@ -58,8 +58,8 @@ function CertificateCards({ img, title, issuer, date, description, link, icon })
                   alignItems: "center",
                   gap: "6px",
                   fontSize: "0.85em",
-                  borderColor: "rgba(135, 206, 235, 0.4)",
-                  color: "#d4eef8",
+                  borderColor: "rgba(199, 112, 240, 0.4)",
+                  color: "#e3b1f7",
                   borderRadius: "20px",
                   padding: "4px 12px",
                 }}
@@ -105,8 +105,8 @@ function CertificateCards({ img, title, issuer, date, description, link, icon })
             closeButton
             closeVariant="white"
             style={{
-              background: "#050a0f",
-              borderBottom: "1px solid rgba(135, 206, 235, 0.25)",
+              background: "#0a0416",
+              borderBottom: "1px solid rgba(199, 112, 240, 0.25)",
               color: "#ffffff",
             }}
           >
@@ -128,12 +128,12 @@ function CertificateCards({ img, title, issuer, date, description, link, icon })
           {link && (
             <Modal.Footer
               style={{
-                background: "#050a0f",
-                borderTop: "1px solid rgba(135, 206, 235, 0.25)",
+                background: "#0a0416",
+                borderTop: "1px solid rgba(199, 112, 240, 0.25)",
                 justifyContent: "space-between",
               }}
             >
-              <span style={{ color: "#87CEEB", fontSize: "0.9em" }}>{issuer}</span>
+              <span style={{ color: "#c770f0", fontSize: "0.9em" }}>{issuer}</span>
               <Button
                 variant="primary"
                 size="sm"

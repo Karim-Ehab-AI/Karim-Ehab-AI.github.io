@@ -49,8 +49,8 @@ function Home2() {
                 alt="Karim Ehab"
                 style={{
                   borderRadius: "50%",
-                  border: "4px solid #87CEEB",
-                  boxShadow: "0 0 30px rgba(135, 206, 235, 0.45)",
+                  border: "4px solid #c770f0",
+                  boxShadow: "0 0 30px rgba(199, 112, 240, 0.45)",
                   maxWidth: "280px",
                   width: "100%",
                   aspectRatio: "1/1",
