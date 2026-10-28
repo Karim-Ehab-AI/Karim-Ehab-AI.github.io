@@ -1,142 +1,67 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { SiNextdotjs, SiSolidity } from "react-icons/si";
-import { FaRust } from "react-icons/fa";
-import Go from "../../Assets/TechIcons/go.svg";
-import C from "../../Assets/TechIcons/C++.svg";
-import Javascript from "../../Assets/TechIcons/Javascript.svg";
-import Node from "../../Assets/TechIcons/Node.svg";
-import ReactIcon from "../../Assets/TechIcons/React.svg";
-import HaskellIcon from "../../Assets/TechIcons/Haskell.svg";
-import Java from "../../Assets/TechIcons/Java.svg";
+import {
+  SiFastapi,
+  SiMicrosoftazure,
+  SiOpenai,
+  SiPytorch,
+  SiMlflow,
+  SiPydantic,
+  SiPostgresql,
+  SiBentoml,
+  SiNgrok,
+} from "react-icons/si";
+
 import Python from "../../Assets/TechIcons/Python.svg";
-import Typescript from "../../Assets/TechIcons/Typescript.svg";
-import Git from "../../Assets/TechIcons/Git.svg";
-import Firebase from "../../Assets/TechIcons/Firebase.svg";
+import Gemini from "../../Assets/TechIcons/Gemini.svg";
+import Groq from "../../Assets/TechIcons/Groq.png";
+import Langchain from "../../Assets/TechIcons/Langchain.svg";
+import Qdrant from "../../Assets/TechIcons/Qdrant.svg";
+import Pinecone from "../../Assets/TechIcons/Pinecone.png";
+import Ragas from "../../Assets/TechIcons/Ragas.png";
+import Mongo from "../../Assets/TechIcons/Mongo.svg";
 import Redis from "../../Assets/TechIcons/Redis.svg";
 import Docker from "../../Assets/TechIcons/Docker.svg";
-import Mongo from "../../Assets/TechIcons/Mongo.svg";
-import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
-import Redux from "../../Assets/TechIcons/Redux.svg";
-import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
-import MUI from "../../Assets/TechIcons/MUI.svg";
+import Git from "../../Assets/TechIcons/Git.svg";
 import Postman from "../../Assets/TechIcons/Postman.svg";
-import AWS from "../../Assets/TechIcons/AWS.svg";
-import Kafka from "../../Assets/TechIcons/Kafka.svg";
+import Ollama from "../../Assets/TechIcons/Ollama.png";
+import vLLM from "../../Assets/TechIcons/vLLM.png";
 
 function Techstack() {
+  const skills = [
+    { name: "Python", icon: <img src={Python} alt="Python" /> },
+    { name: "FastAPI", icon: <SiFastapi fontSize="28px" color="#009688" /> },
+    { name: "Azure", icon: <SiMicrosoftazure fontSize="28px" color="#0089D6" /> },
+    { name: "OpenAI", icon: <SiOpenai fontSize="28px" color="#FFFFFF" /> },
+    { name: "Gemini", icon: <img src={Gemini} alt="Gemini" style={{ width: "36px", height: "36px" }} /> },
+    { name: "Groq", icon: <img src={Groq} alt="Groq" style={{ width: "36px", height: "36px", objectFit: "contain" }} /> },
+    { name: "LangChain", icon: <img src={Langchain} alt="LangChain" style={{ width: "36px", height: "36px" }} /> },
+    { name: "Qdrant", icon: <img src={Qdrant} alt="Qdrant" style={{ width: "36px", height: "36px" }} /> },
+    { name: "Pinecone", icon: <img src={Pinecone} alt="Pinecone" style={{ width: "36px", height: "36px", objectFit: "contain" }} /> },
+    { name: "", icon: <img src={Ragas} alt="RAGAS" style={{ height: "26px", width: "auto", maxWidth: "85px", objectFit: "contain" }} /> },
+    { name: "PyTorch", icon: <SiPytorch fontSize="28px" color="#EE4C2C" /> },
+    { name: "MLflow", icon: <SiMlflow fontSize="28px" color="#0194E2" /> },
+    { name: "MongoDB", icon: <img src={Mongo} alt="MongoDB" /> },
+    { name: "Redis", icon: <img src={Redis} alt="Redis" /> },
+    { name: "Docker", icon: <img src={Docker} alt="Docker" /> },
+    { name: "Pydantic", icon: <SiPydantic fontSize="28px" color="#E92063" /> },
+    { name: "PostgreSQL", icon: <SiPostgresql fontSize="28px" color="#4169E1" /> },
+    { name: "Git", icon: <img src={Git} alt="Git" /> },
+    { name: "Postman", icon: <img src={Postman} alt="Postman" /> },
+    { name: "Ollama", icon: <img src={Ollama} alt="Ollama" style={{ width: "34px", height: "34px", objectFit: "contain" }} /> },
+    { name: "BentoML", icon: <SiBentoml fontSize="28px" color="#6366F1" /> },
+    { name: "vLLM", icon: <img src={vLLM} alt="vLLM" style={{ width: "24px", height: "24px", objectFit: "contain" }} /> },
+    { name: "ngrok", icon: <SiNgrok fontSize="28px" color="#1F1E33" style={{ background: "#FFFFFF", borderRadius: "6px", padding: "2px" }} /> },
+  ];
+
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={C} alt="C++" />
-        <div className="tech-icons-text">C++</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Typescript} alt="typescript" />
-        <div className="tech-icons-text">Javascript</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Go} alt="go" />
-        <div className="tech-icons-text">Go</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Node} alt="node" />
-        <div className="tech-icons-text">Node.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={ReactIcon} alt="react" />
-        <div className="tech-icons-text">React.Js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity fontSize={"24px"} />
-        <div className="tech-icons-text">Solidity</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Mongo} alt="mongoDb" />
-        <div className="tech-icons-text">Mongo DB</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redux} alt="redux" />
-        <div className="tech-icons-text">Redux</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs fontSize={"24px"} />
-        <div className="tech-icons-text">Next.js</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Git} alt="git" />
-        <div className="tech-icons-text">Git</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="firebase" />
-        <div className="tech-icons-text">Firebase</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Redis} alt="redis" />
-        <div className="tech-icons-text">Redis</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Docker} alt="docker" />
-        <div className="tech-icons-text">Docker</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kubernates} alt="kubernetes" />
-        <div className="tech-icons-text">Kubernetes</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={SQL} alt="SQL" />
-        <div className="tech-icons-text">Postgresql</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Python} alt="Python" />
-        <div className="tech-icons-text">Python</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Java} alt="haskell" />
-        <div className="tech-icons-text">Java</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={HaskellIcon} alt="haskell" />
-        <div className="tech-icons-text">Haskell</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Tailwind} alt="tailwind" />
-        <div className="tech-icons-text">Tailwind CSS</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={MUI} alt="mui" />
-        <div className="tech-icons-text">Material UI</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Postman} alt="Postman" />
-        <div className="tech-icons-text">Postman</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <FaRust fontSize={"24px"} />
-        <div className="tech-icons-text">Rust</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={AWS} alt="Postman" className="tech-icon-images" />
-        <div className="tech-icons-text">AWS</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Kafka} alt="Kafka" className="tech-icon-images" />
-        <div className="tech-icons-text">Kafka</div>
-      </Col>
+      {skills.map((skill, index) => (
+        <Col xs={4} md={2} className="tech-icons" key={index}>
+          {skill.icon}
+          {skill.name && <div className="tech-icons-text">{skill.name}</div>}
+        </Col>
+      ))}
     </Row>
   );
 }

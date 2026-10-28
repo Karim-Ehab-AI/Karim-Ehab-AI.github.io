@@ -1,53 +1,55 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+import ExperienceTimeline from "./ExperienceTimeline";
+import Education from "./Education";
+import CommunityTimeline from "./CommunityTimeline";
 
 function About() {
   return (
     <>
-      {" "}
       <Particle />
       <Container fluid className="about-section">
         <Container>
-          <Row style={{ justifyContent: "center", padding: "10px" }}>
-            <Col
-              md={7}
-              style={{
-                justifyContent: "center",
-                paddingTop: "30px",
-                paddingBottom: "50px",
-              }}
-            >
-              <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-                Know Who <strong className="purple">I'M</strong>
-              </h1>
-              <Aboutcard />
-            </Col>
-            <Col
-              md={5}
-              style={{ paddingTop: "120px", paddingBottom: "50px" }}
-              className="about-img"
-            >
-              <img src={laptopImg} alt="about" className="img-fluid" />
-            </Col>
-          </Row>
-          <h1 className="project-heading">
-            Professional <strong className="purple">Skillset </strong>
+          {/* 1. Experience */}
+          <h1 className="project-heading" style={{ paddingBottom: "10px" }}>
+            Professional <strong className="purple">Experience</strong>
           </h1>
+          <p style={{ color: "#d1d5db", textAlign: "center", marginBottom: "15px" }}>
+            My engineering internships, traineeships, and production AI development.
+          </p>
+          <ExperienceTimeline />
 
+          {/* 2. Skills */}
+          <h1 className="project-heading" style={{ paddingTop: "50px", paddingBottom: "10px" }}>
+            Professional <strong className="purple">Skillset</strong>
+          </h1>
+          <p style={{ color: "#d1d5db", textAlign: "center", marginBottom: "25px" }}>
+            Core technologies, AI frameworks, and vector databases I leverage in building scalable systems.
+          </p>
           <Techstack />
 
-          <h1 className="project-heading">
-            <strong className="purple">Tools</strong> I use
+          {/* 3. Education */}
+          <h1 className="project-heading" style={{ paddingTop: "40px", paddingBottom: "10px" }}>
+            Academic <strong className="purple">Education</strong>
           </h1>
-          <Toolstack />
+          <Education />
 
-          <Github />
+          {/* 4. Community and Volunteer */}
+          <h1 className="project-heading" style={{ paddingTop: "50px", paddingBottom: "10px" }}>
+            Community &amp; <strong className="purple">Volunteering</strong>
+          </h1>
+          <p style={{ color: "#d1d5db", textAlign: "center", marginBottom: "15px" }}>
+            Leadership roles, community workshops, and technical content creation.
+          </p>
+          <CommunityTimeline />
+
+          {/* 5. Days I Code */}
+          <div style={{ paddingTop: "35px" }}>
+            <Github />
+          </div>
         </Container>
       </Container>
     </>

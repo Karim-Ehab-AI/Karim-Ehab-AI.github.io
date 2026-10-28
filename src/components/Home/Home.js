@@ -4,12 +4,10 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import Techstack from "../About/Techstack";
-import Github from "../About/Github";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
+  AiFillYoutube,
+  AiOutlineMail,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -30,7 +28,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> KARIM EHAB</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -61,27 +59,7 @@ function Home() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/karim-ehab-b221a22a3/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -91,12 +69,32 @@ function Home() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="mailto:karim.ehab.ai@gmail.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
                 >
-                  <AiFillInstagram />
+                  <AiOutlineMail />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://github.com/Karim-Ehab-AI"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillGithub />
+                </a>
+              </li>
+              <li className="social-icons">
+                <a
+                  href="https://www.youtube.com/@Karim-Ehab-AI"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <AiFillYoutube />
                 </a>
               </li>
             </ul>

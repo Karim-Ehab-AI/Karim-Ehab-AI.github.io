@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -13,43 +13,50 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I am an <b className="purple">AI Engineer</b> driven by building scalable, evaluation-driven, and reliable AI solutions for complex real-world challenges.
               <br />
               <br />
-              I’m proficient in
+              I specialize in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Python, FastAPI, RAG Systems, and AI Agents{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
+              — with deep hands-on expertise across both AI architecture and software engineering.
               <br />
               <br />
               My key areas of interest include developing
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Advanced Hybrid Retrieval, Multi-Agent Workflows,{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              and production-ready GenAI applications.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
-              <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
-              </i>
+              I am a
+              <b className="purple"> Microsoft Certified: Azure AI Apps and Agents Developer Associate (AI-103) </b>
+              and actively share practical AI engineering insights as a tech speaker, community mentor, and YouTube creator.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img
+                src={myImg}
+                className="img-fluid"
+                alt="Karim Ehab"
+                style={{
+                  borderRadius: "50%",
+                  border: "4px solid #87CEEB",
+                  boxShadow: "0 0 30px rgba(135, 206, 235, 0.45)",
+                  maxWidth: "280px",
+                  width: "100%",
+                  aspectRatio: "1/1",
+                  objectFit: "cover",
+                }}
+              />
             </Tilt>
           </Col>
         </Row>
@@ -57,4 +64,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;

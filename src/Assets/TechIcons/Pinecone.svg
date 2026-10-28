@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <rect width="48" height="48" rx="10" fill="#047857"/>
+  <!-- Pinecone layered geometric pattern -->
+  <polygon points="24,6 30,14 18,14" fill="#A7F3D0"/>
+  <polygon points="18,16 30,16 36,24 12,24" fill="#6EE7B7"/>
+  <polygon points="14,26 34,26 38,34 10,34" fill="#34D399"/>
+  <polygon points="16,36 32,36 28,42 20,42" fill="#10B981"/>
+</svg>
+

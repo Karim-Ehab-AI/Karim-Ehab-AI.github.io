@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="vllmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <rect width="48" height="48" rx="10" fill="#0F172A"/>
+  <!-- Bold V shape -->
+  <path d="M12 12 L20 12 L24 26 L28 12 L36 12 L28 36 L20 36 Z" fill="url(#vllmGrad)"/>
+  <circle cx="36" cy="34" r="3" fill="#38BDF8"/>
+</svg>
+
